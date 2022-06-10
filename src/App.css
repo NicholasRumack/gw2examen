@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+    font-family: 'GWTwo';
+    font-weight: 900;
+    src: local('GWTwo'), url(../fonts/GWTwoFont.ttf) format('truetype');
+}
+

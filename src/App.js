@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Composition from "./pages/Composition";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Route, Routes} from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+	<Navbar/>
+		<Container className="justify-content-center"> 
+		<Header />
+		<Routes>
+			<Route path="/" element= {<Home />} />
+			<Route path="/Composition" element= {<Composition />} />
+		</Routes>
+		<Footer/>
+	</Container>
+  </div>
   );
 }
 
