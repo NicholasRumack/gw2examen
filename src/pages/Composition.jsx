@@ -89,6 +89,7 @@ const [square10, setsquare10] = useState([])
 	}
 
   return (
+
 	  <Container>
 		  <Tabs defaultActiveKey="core" className="mb-3">
 			  <Tab eventKey="core" title="Core">
@@ -111,31 +112,31 @@ const [square10, setsquare10] = useState([])
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare1} />
 				  <div onClick={clickedsetsquare1} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square1} alt='' />
+					  <img src={square1} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare2} />
 				  <div onClick={clickedsetsquare2} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square2} alt='' />
+					  <img src={square2} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare3} />
 				  <div onClick={clickedsetsquare3} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square3} alt='' />
+					  <img src={square3} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare4} />
 				  <div onClick={clickedsetsquare4} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square4} alt='' />
+					  <img src={square4} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare5} />
 				  <div onClick={clickedsetsquare5} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square5} alt='' />
+					  <img src={square5} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 		  </div>
@@ -144,31 +145,31 @@ const [square10, setsquare10] = useState([])
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare6} />
 				  <div onClick={clickedsetsquare6} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square6} alt='' />
+					  <img src={square6} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare7} />
 				  <div onClick={clickedsetsquare7} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square7} alt='' />
+					  <img src={square7} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare8} />
 				  <div onClick={clickedsetsquare8} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square8} alt='' />
+					  <img src={square8} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare9} />
 				  <div onClick={clickedsetsquare9} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square9} alt='' />
+					  <img src={square9} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 			  <Card className='m-2'>
 				  <CloseButton onClick={clearSquare10} />
 				  <div onClick={clickedsetsquare10} className='p-2' style={{ width: '6rem', height: '5rem' }}>
-					  <img src={square10} alt='' />
+					  <img src={square10} alt='' style={{width: 60}}/>
 				  </div>
 			  </Card>
 		  </div>

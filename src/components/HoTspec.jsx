@@ -3,7 +3,7 @@ import React, { useState,  useEffect } from 'react'
 export default function HoTspec({setHoTspec}) {
 
 const [HoTspecs, setHoTspecs] = useState([])
-const [isActive, setIsActive] = useState(false);
+/* const [isActive, setIsActive] = useState(false); */
 
 const [baseApi, setBaseApi] = useState("https://api.guildwars2.com/v2/specializations")
 
@@ -31,16 +31,16 @@ useEffect(() => {
 			}
 		)
 });
-	const handleColor = () => {
+/* 	const handleColor = () => {
 		setIsActive(current => !current);
 	}
 	console.log(isActive)
-
+ */
 	return (
 		<div  className='d-flex flex-wrap' >
 			{HoTspecs.map(({ profession_icon_big }) => (
-				<div className='m-1' key={profession_icon_big} onClick={() => handleColor + setHoTspec(profession_icon_big)} > 
-					<img src={profession_icon_big} alt=''   style={{backgroundColor: isActive ? 'steelblue' : ''}}/>
+				<div className='m-1' key={profession_icon_big} onClick={() => setHoTspec(profession_icon_big)} > 
+					<img src={profession_icon_big} alt='' style={{width: 60}} />
 				</div>
 			))}
 		</div>

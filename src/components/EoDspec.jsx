@@ -36,7 +36,7 @@ useEffect(() => {
 		<div className='d-flex flex-wrap' >
 			{EoDspec.map(({ profession_icon_big }) => (
 				<div key={profession_icon_big} onClick={() => setEoDspec(profession_icon_big)} > 
-					<img src={profession_icon_big} alt='' />
+					<img src={profession_icon_big} alt='' style={{width: 60}} />
 				</div>
 			))}
 		</div>

@@ -5,8 +5,8 @@ export default function Corespec({setCorespec}) {
 const [Corespecs, setCorespecs] = useState([])
 const [baseApi, setBaseApi] = useState("https://api.guildwars2.com/v2/professions")
 
-const [isActive, setIsActive] = useState(false);
-
+/* const [isActive, setIsActive] = useState(false);
+ */
 
 useEffect(() => {
 
@@ -31,16 +31,16 @@ useEffect(() => {
 			}
 		)
 });
-	const handleColor = () => {
+/* 	const handleColor = () => {
 		setIsActive(current => !current);
-	}
+	} style={{backgroundColor: isActive ? 'steelblue' : ''}} */
 
 	return (
 		<div  className='d-flex flex-wrap' >
 			{Corespecs.map(({ icon_big }) => (
-				<Card className='m-1' key={icon_big} onClick={() => handleColor + setCorespec(icon_big)} style={{backgroundColor: isActive ? 'steelblue' : ''}}> 
-					<img src={icon_big} alt='' className='w-20'/>
-				</Card>
+				<div className='m-1' key={icon_big} onClick={() => setCorespec(icon_big)} > 
+					<img src={icon_big} alt='' className='w-20' style={{width: 60}}/>
+				</div>
 			))}
 		</div>
 	)
